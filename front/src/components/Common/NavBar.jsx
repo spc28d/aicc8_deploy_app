@@ -44,7 +44,7 @@ const NavBar = () => {
   return (
     <nav className="bg-[#212121] w-1/5 h-full rounded-sm border border-gray-500 py-10 px-4 flex flex-col justify-between items-center">
       <div className="logo-wrapper flex w-full items-center justify-center gap-8">
-        <div className="logo flex"></div>
+        <div className="logo"></div>
         <h2 className="font-semibold text-xl">
           <Link to="/">MARS</Link>
         </h2>
@@ -53,7 +53,7 @@ const NavBar = () => {
         {navMenus.map((menu, idx) => (
           <li
             key={idx}
-            className={`rounded-sm mb-2 border border-gray-700 hover: bg-gray-950 transition-all duration-300 ${
+            className={`rounded-sm mb-2 border border-gray-700 hover:bg-gray-950 transition-all duration-300 ${
               isActive(menu.to) ? 'bg-gray-950' : ''
             }`}
           >

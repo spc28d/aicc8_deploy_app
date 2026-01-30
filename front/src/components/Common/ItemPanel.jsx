@@ -10,7 +10,6 @@ const ItemPanel = ({ pageTitle }) => {
   const userKey = state?.sub;
 
   const isOpen = useSelector((state) => state.modal.isOpen);
-  console.log(isOpen);
 
   return (
     <div className="panel bg-[#212121] w-4/5 h-full rounded-md border border-gray-500 py-5 px-4 overflow-y-auto">
