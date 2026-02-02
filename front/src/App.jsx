@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Completed from './components/Completed';
 import Important from './components/Important';
 import Proceeding from './components/Proceeding';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
@@ -15,6 +16,11 @@ const App = () => {
           <Route path="/important" element={<Important />} />
           <Route path="/proceeding" element={<Proceeding />} />
         </Routes>
+        <ToastContainer
+          position="bottom-center"
+          autoClose={1000}
+          theme="dark"
+        />
       </div>
     </BrowserRouter>
   );
