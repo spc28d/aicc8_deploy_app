@@ -1,12 +1,16 @@
 import React from 'react';
-import NavBar from '../Common/NavBar';
+import Navbar from '../Common/NavBar';
 import ItemPanel from '../Common/ItemPanel';
 
 const index = () => {
   return (
     <div className="page_section">
-      <NavBar />
-      <ItemPanel pagetitle="Important Items" />
+      <Navbar />
+      <ItemPanel
+        pageTitle="Important Items"
+        filteredCompleted="all"
+        filteredImportant={true}
+      />
     </div>
   );
 };
